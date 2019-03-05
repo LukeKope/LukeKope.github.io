@@ -1,0 +1,141 @@
+nav{
+  text-align: center;
+  background-color: #201e1e;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul{
+  margin-left: 0px;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li{
+  display: inline;
+  padding: 50px;
+}
+
+nav a{
+  color: #ffce29;
+  font-family: sans-serif;
+  font-style: normal;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: white;
+}
+
+nav a:active{
+  text-decoration: underline;
+}
+
+
+h1{
+  text-align: center;
+  color: white;
+  margin-top: 125px;
+}
+
+h3, p{
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+span{
+  text-decoration: underline;
+  color: lightblue;
+  font-size: 50;
+}
+
+.image_text_padding{
+ padding-bottom: 50px;
+}
+
+.ImageZoom{
+  width: 25%;
+  height: 25%;
+  float: left;
+  margin: 4px;
+  padding-left: 100px;
+  transition: 0.5s;
+}
+
+.ImageZoom:hover{
+  width: 30%;
+  height: 30%;
+}
+
+#home{
+   font-family: sans-serif;
+   font-size: 75px;
+   background-color: #ffce29;
+   height: 500px;
+   width:100%;
+   padding: 50px;
+}
+
+#Gallery{
+   background-color: #201e1e;
+   height: 900px;
+   width:100%;
+   padding: 50px;
+}
+
+#kyrieimage{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#elyseimage{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#self_portraitimage{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+
+#resume{
+   background-color: #ffce29;
+   height: 1100px;
+   width:100%;
+   padding: 50px;
+}
+
+#resumeimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  transition: 0.5s;
+}
+
+#resumeimage:hover{
+  width: 40%;
+}
+
+#contact{
+   background-color: #201e1e;
+   height: 1000px;
+   width:100%;
+   padding: 50px;
+}
+
+#iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
