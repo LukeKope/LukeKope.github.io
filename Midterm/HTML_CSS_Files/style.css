@@ -129,6 +129,10 @@ label{
     .text_center{
       text-align: center;
     }
+
+    .text_padding{
+      padding-top: 100px;
+    }
 /* End work images css */
 
 /* Kyrie page styling */
