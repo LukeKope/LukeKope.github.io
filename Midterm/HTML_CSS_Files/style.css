@@ -65,8 +65,12 @@ P{
   color:#f6ca15;
 }
 
+input{
+  color: #f1f2f2!important;
+}
+
 label{
-  color: #f1f2f2 !important;
+  color: #f6ca15 !important;
   font-family: 'Montserrat', sans-serif;
 }
 
