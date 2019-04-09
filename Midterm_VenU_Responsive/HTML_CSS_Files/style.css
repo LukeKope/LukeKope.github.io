@@ -253,8 +253,9 @@ label{
         .fas.fa-bars{
           color: #f6ca15 !important;
           font-size: 25px;
-          margin-left: 30px;
-          margin-top: 50px;
+          margin-left: 20px;
+          margin-top: 7px;
+          position: fixed;
         }
 
         /* Position the content inside the overlay */
