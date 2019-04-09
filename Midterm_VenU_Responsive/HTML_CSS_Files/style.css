@@ -1,0 +1,455 @@
+body{
+  background-color: #101514;
+  margin-top: 0px;
+}
+/* Overarching div that moves all content over 90px to account for nav bar */
+.nav_margin_container{
+  margin-left: 90px;
+}
+
+
+/* Nav bar */
+    nav{
+      height: 100%;
+      width: 90px;
+      display: block;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #101514;
+      overflow-x: hidden;
+      padding-top: 375px;
+      box-shadow: 15px 0px 30px black;
+    }
+
+    nav a{
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      padding: 6px 8px 6px 0px;
+      font-size: 15px;
+      display: block;
+      color: #f1f2f2;
+      text-align: center;
+      transition: 0.5s;
+    }
+
+
+    nav a:hover{
+      font-size: 18px;
+      color: #f6ca15;
+    }
+/* End nav bar */
+
+
+#name_title_styling{
+  font-size: 50px;
+  text-decoration: none;
+}
+
+h1,h2{
+  color: #f6ca15 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+P{
+  color: #f1f2f2 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+
+/* Contact form icon style color */
+.icon_coloring{
+  color:#f6ca15;
+}
+
+input{
+  color: #f1f2f2!important;
+}
+
+label{
+  color: #f6ca15 !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.active{
+  text-decoration: underline;
+  color: #f6ca15;
+}
+
+#work:active{
+  text-decoration: underline;
+  color: #f6ca15;
+}
+
+
+.text_container{
+  width: 60%;
+  display: flex;
+  margin: 0px auto 0px auto;
+}
+
+/* work images css */
+    .image {
+        margin: 15px auto 100px auto;
+        border: 1.5px solid #ccc;
+        width: 75%;
+        transition: 0.5s;
+    }
+
+    .image:hover {
+        border: 0px;
+        box-shadow: 35px 35px 50px black;
+        transform: scale(1.01,1.01);
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .desc {
+        padding: 15px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        color: #f1f2f2;
+        text-decoration: none !important;
+    }
+
+    .column{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text_center{
+      text-align: center;
+    }
+
+    .text_padding{
+      padding-top: 100px;
+    }
+/* End work images css */
+
+/* Kyrie page styling */
+.kyrie_images{
+    width: 30%;
+    height: auto;
+    padding: 10px 10px 10px 30px;
+}
+
+.kyrie_images_row2{
+    width: 30%;
+    height: auto;
+    padding: 10px 10px 10px 615px;
+}
+
+.project_descriptions{
+  padding-left: 5px;
+  padding-bottom: 100px;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+/* RENOV8 page styling */
+.renov8_pics_3{
+  width: 28%;
+  height: auto;
+  padding: 5px 10px 5px 60px;
+}
+
+.renov8_pics_4{
+  width: 20%;
+  height: auto;
+  padding: 5px 10px 5px 60px;
+}
+
+.renov8_pics_6{
+  width: 15%;
+  height: auto;
+  padding: 10px 10px 10px 15px;
+}
+
+.VenU_pics_4{
+  width: 20%;
+  height: auto;
+  padding: 5px 10px 5px 60px;
+}
+
+.VenU_pics_5{
+  width: 15.16%;
+  height: auto;
+  padding: 10px 10px 10px 60px;
+}
+/* VenU Responsive CSS*/
+
+/* Large screen */
+@media (min-width: 1766px){
+
+  .large_screen_grid{
+    display: block;
+  }
+
+  .responsive_grid_small{
+  display: none;
+  }
+
+  .responsive_grid_medium{
+    display: none;
+    }
+
+#small_screen_nav{
+  display: none;
+  }
+}
+
+/* Medium Screen */
+@media (max-width: 1765px) and (min-width: 1018px){
+  .responsive_grid_medium{
+    display: block;
+  }
+  .VenU_pics_3{
+    width: 25%;
+    height: auto;
+    padding: 5px 10px 5px 60px;
+  }
+
+  .VenU_pics_4{
+    width: 40%;
+  }
+
+  .large_screen_grid{
+    display: none;
+  }
+
+  .responsive_grid_small{
+    display: none;
+  }
+
+}
+
+/* Small screen nav */
+        /* The Overlay (background) */
+        .overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */
+        height: 100%;
+        width: 0%;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: #101514;
+        opacity: 0.95;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+        }
+
+        .fas.fa-bars{
+          color: #f6ca15 !important;
+          font-size: 25px;
+          margin-left: 30px;
+          margin-top: 50px;
+        }
+
+        /* Position the content inside the overlay */
+        .overlay-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+        }
+
+        /* The navigation links inside the overlay */
+        .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #f1f2f2;
+        font-family: 'Montserrat', sans-serif;
+        display: block; /* Display block instead of inline */
+        transition: 0.3s; /* Transition effects on hover (color) */
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .overlay a:hover, .overlay a:focus {
+        color: #f6ca15;
+        }
+
+        /* Position the close button (top right corner) */
+        .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        }
+
+        span{
+          color: #f1f2f2;
+          font-family: 'Montserrat', sans-serif;
+        }
+        /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+        @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        color: #f1f2f2;
+        top: 15px;
+        right: 35px;
+        }
+        }
+
+
+/* VenU Small Screen */
+@media (max-width: 1018px){
+  .responsive_grid_small{
+    display: block;
+  }
+
+  .large_screen_grid{
+    display: none;
+  }
+
+  .responsive_grid_medium{
+    display: none;
+  }
+
+  .VenU_pics_4{
+    width: 35%;
+    padding-left: 80px;
+    padding-bottom: 20px;
+  }
+
+  #large_screen_nav{
+    display: none;
+  }
+
+  #small_screen_nav{
+    display: block;
+  }
+
+  .nav_margin_container{
+    margin: 0;
+  }
+
+}
+
+/* Resume image sizing */
+    section{
+      padding-left: 0px;
+      padding-top: 75px;
+    }
+    /* Ran into problem where the hover effect was triggering on the entire section because I had the padding left in the .resume class, so hovering over that padding triggered the transform. Had to
+    move the padding-left into the section tag */
+    .resume{
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid #f6ca15;
+      box-shadow: 35px 35px 50px black;
+      transition: 0.5s;
+    }
+
+    .resume:hover{
+      transform: scale(1.1,1.1);
+      border: 0px solid #ccc;
+    }
+/* End resume image sizing */
+
+/* Headshot sizing */
+    .headshot{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      transition: 0.5s;
+      width: 400px;
+      height: auto;
+    }
+
+    .headshot:hover{
+      transform: scale(1.05,1.05);
+    }
+
+    #headshot_resize{
+      width: 400px;
+      height: auto;
+    }
+/* End headshot sizing */
+
+
+
+/* Carousel CSS */
+#gallery_padding{
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .carousel-item{
+      transition: 1000ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .carousel-item{
+        /* use your favourite prefixer here */
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carousel-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+.resize_carousel_images{
+  width: 350px;
+  height: 450px;
+}
+
+/*  non-related styling: */
+body{
+  background-color: #101514 !important;
+}
+
+/* Treat these like fonts when styling */
+.fas.fa-arrow-circle-left, .fas.fa-arrow-circle-right{
+  color: #f1f2f2;
+  position: absolute;
+  top: 50%;
+}
+
+.fas.fa-arrow-circle-left{
+  left: -5%;
+}
+
+.fas.fa-arrow-circle-right{
+  right: -4%;
+}
