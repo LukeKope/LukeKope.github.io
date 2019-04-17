@@ -1,4 +1,4 @@
-function squareNumber(square_num){
+function squareNumber(){
   var square = document.getElementById('square-input').value;
   var square_rounded = (square**2).toFixed(2);
   console.log("The result of squaring the number " + square + " is " + square_rounded);
@@ -8,8 +8,7 @@ function squareNumber(square_num){
 
 
 
-function halfNumber()
-{
+function halfNumber(){
   var half = document.getElementById('half-input').value;
   var half_rounded = (half/2).toFixed(2)
   console.log("Half of " + half + " is " + half_rounded);
@@ -18,8 +17,7 @@ function halfNumber()
 }
 
 
-function percentOf()
-{
+function percentOf(){
   var num1 = document.getElementById('percent1-input').value;
   var num2 = document.getElementById('percent2-input').value;
   var percent = ((num1/num2)*100).toFixed(2);
@@ -28,8 +26,7 @@ function percentOf()
   return percent;
 }
 
-function areaOfCircle()
-{
+function areaOfCircle(){
   var radius = document.getElementById('area-input').value;
   var area = (Math.PI*radius**2).toFixed(2);
   console.log("The area of a circle with radius " + radius + " is " + area);
