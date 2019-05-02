@@ -1,0 +1,182 @@
+/* Light Green: #5dbd6b */
+/* Blue: #0f4c88 */
+/* White: #f9fbfc */
+/* Dark green: #0c9949 */
+.fadeContainer{
+  opacity: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+/* Home page */
+header {
+  /*background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url(../Images/banner.jpeg); */
+  background-color: #f9fbfc;
+  background-size: cover;
+  height: 100vh; /* vh is viewport height */
+
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5dbd6b;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  /* text-transform: uppercase; */
+  margin: 0;
+  font-size: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: #0f4c88;
+  font-size: 25px;
+}
+
+p{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  color: #0c9949;
+  font-size: 20px;
+}
+
+#planetNCLogo{
+  border-radius: 100%;
+  height: 50%;
+  width: 50%;
+}
+
+#bannerPara{
+  margin: 0;
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+#facebookIcon{
+  color: #f9fbfc;
+  float: right;
+  font-size: 25px;
+  padding-right: 10px;
+}
+#scrollLink{
+  text-decoration: none;
+  color: #5dbd6b;
+}
+
+#aboutUsButton{
+
+  font-size: 25px;
+  text-decoration: underline;
+
+}
+.fa-chevron-down{
+  font-size: 50px;
+}
+
+#aboutHeader{
+  text-align: center;
+  font-weight: 500;
+  padding-top: 100px;
+  color: #0f4c88;
+}
+/* About section flexbox */
+.flex-grid {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.col {
+  flex: 1;
+  
+}
+
+.aboutIcons{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+
+/* Nav Bar */
+
+#nav {
+  height: 70px;
+  background: transparent; //Transparent initial setting
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+  box-shadow: 0px 0px 0px black;
+}
+
+#navBar{
+  height: 50px;
+  background: #5dbd6b;
+}
+
+.logo {
+  color: #5dbd6b;
+  padding: 0px;
+  font-size: 18px;
+  transition: all ease .5s;
+  opacity: 0.0;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+
+.active{
+  color: #0c9949;
+  text-decoration: none;
+}
+
+#upcomingEventsDiv {
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#nav.shrink {
+  height: 50px;
+  transition: all ease .5s;
+  background: #f9fbfc; //Change background to white on scroll
+
+}
+
+#nav.shrink .logo {
+  padding: 15px 10px 15px 10px;
+  transition: all ease .5s;
+  opacity: 1;
+}
+
+#dumby_text{
+  padding-top: 1000px;
+}
