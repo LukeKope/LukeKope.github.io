@@ -11,9 +11,7 @@ html{
 }
 
 body{
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
+  margin: 0;
 }
 
 /* Home page */
@@ -47,6 +45,13 @@ h1 {
   white-space: nowrap;
 }
 
+
+#eventsHomeTitle{
+  text-align: center;
+  color: #0f4c88;
+  padding-top: 100px;
+}
+
 h2{
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
@@ -59,7 +64,7 @@ p{
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
   color: #0c9949;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #planetNCLogo{
@@ -75,24 +80,43 @@ p{
 }
 
 #facebookIcon{
-  color: #f9fbfc;
-  float: right;
-  font-size: 25px;
-  padding-right: 10px;
+  color: #5dbd6b;
+  font-size: 20px;
+  padding: 0px 10px 15px 10px;
 }
 #scrollLink{
   text-decoration: none;
   color: #5dbd6b;
 }
 
-#aboutUsButton{
+.aboutUsButton{
 
   font-size: 25px;
   text-decoration: underline;
 
 }
+
+#about{
+  height: 1200px;
+}
+
 .fa-chevron-down{
   font-size: 50px;
+  text-align: center;
+  display: block !important;
+}
+
+.upcomingEventsColor{
+  color: #0f4c88;
+}
+
+#upcomingEventsDiv {
+  height: 1000px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: #f9fbfc;
 }
 
 #aboutHeader{
@@ -104,15 +128,17 @@ p{
 /* About section flexbox */
 .flex-grid {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
   padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
-
 }
+
 .col {
   flex: 1;
-  
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .aboutIcons{
@@ -122,10 +148,47 @@ p{
   border-radius: 50%;
 }
 
+.upcomingEventsFlex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.upcomingEventsImages{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: inherit;
+  transform: scale(.95, .95);
+}
+
+.upcomingEventsCol{
+  padding: 0;
+  width: 33vw;
+  height: auto;
+}
+
+.upcomingEventDesc{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.upcomingEventsCol:hover{
+  .upcomingEventsCol p{
+  visibility: visible;
+  opacity: 1;
+  }
+}
+
 
 /* Nav Bar */
 
-#nav {
+.nav {
   height: 70px;
   background: transparent; //Transparent initial setting
   display: block;
@@ -134,11 +197,7 @@ p{
   z-index: 99999;
   transition: all ease .5s;
   box-shadow: 0px 0px 0px black;
-}
-
-#navBar{
-  height: 50px;
-  background: #5dbd6b;
+  pointer-events: none;
 }
 
 .logo {
@@ -151,32 +210,39 @@ p{
   text-decoration: none;
 }
 
+.logo:hover{
+  color: #0c9949;
+}
+
 .active{
   color: #0c9949;
   text-decoration: none;
 }
 
-#upcomingEventsDiv {
-  height: 500px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-#nav.shrink {
+.nav.shrink {
   height: 50px;
   transition: all ease .5s;
   background: #f9fbfc; //Change background to white on scroll
 
+
 }
 
-#nav.shrink .logo {
+.nav.shrink .logo {
   padding: 15px 10px 15px 10px;
   transition: all ease .5s;
   opacity: 1;
+  pointer-events: all;
 }
 
-#dumby_text{
-  padding-top: 1000px;
+
+/* Responsive Design Considerations */
+
+@media (max-width: 1250px) {
+  .flex-grid{
+    display: block;
+  }
+  #upcomingEvents{
+    padding-top:500px;
+  }
+
 }

@@ -2,12 +2,12 @@
 $(document).ready(function() {
 	$(window).scroll(function() {
   	if($(document).scrollTop() > 100) {
-    	$('#nav').addClass('shrink');
-			document.getElementById('nav').style.boxShadow = "0px 1px 10px grey";
+    	$('.nav').addClass('shrink');
+			$('.nav').css('boxShadow', "0px 1px 10px grey");
     }
     else {
     // $('#nav').removeClass('shrink');
-		 document.getElementById('nav').style.boxShadow = "0px 0px 0px black";
+		 $('.nav').css('boxShadow', "0px 0px 0px black");
     }
   });
 

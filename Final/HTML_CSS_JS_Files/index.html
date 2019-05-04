@@ -17,7 +17,7 @@
   </head>
   <body>
 
-    <div id="nav">
+    <div class="nav">
       <div class="logo">
 
         <a href="index.html" class="active logo">Home</a>
@@ -32,7 +32,7 @@
         <img src="../Images/planetNC.jpg" id="planetNCLogo" alt="">
         <!-- <h1>Planet New Canaan</h1> -->
         <!-- <p id="bannerPara">Scroll for more!</p> -->
-        <a href="index.html#about" id="scrollLink" onclick="activeChange()"><p id="aboutUsButton">About Us</p>
+        <a href="index.html#about" id="scrollLink" onclick="activeChange()"><p class="aboutUsButton">About Us</p>
         <i class="fas fa-chevron-down"></i></a>
       </div>
     </header>
@@ -52,28 +52,54 @@
 
       <img src="../Images/leaf.png" class="aboutIcons" alt="">
       <h2>Who We Are</h2>
-      <p>We are a small group of ten people passionate about all things environmental!</p>
+      <p>We are a small group of ten people passionate about creating a more sustainable community</p>
 
   </div>
   <div class="col">
 
       <img src="../Images/leaf.png" class="aboutIcons" alt="">
       <h2>What We Do</h2>
-      <p>We educate the residents of New Canaan about all things environmental.</p>
+      <p>We educate the residents of New Canaan about all things sustainable</p>
 
   </div>
 </div>
-
+<a href="index.html#upcomingEvents" id="scrollLink" onclick="activeChange()"><p class="aboutUsButton upcomingEventsColor">Upcoming Events</p>
+<i class="fas fa-chevron-down upcomingEventsColor"></i></a>
 </section>
 
 <section id="upcomingEvents">
 
-      <div id="upcomingEventsDiv"></div>
+<div id="upcomingEventsDiv">
+
+      <h1 id="eventsHomeTitle">Upcoming Events</h1>
+      <div class="upcomingEventsFlex">
+          <div class="upcomingEventsCol">
+            <h2>Event 1</h2>
+
+                <img src="../Images/garbage_cleanup.jpg" class="upcomingEventsImages" alt="">
+                <p>test test</p>
+
+          </div>
+
+          <div class="upcomingEventsCol">
+            <h2>Event 2</h2>
+                <img src="../Images/composting.jpg" class="upcomingEventsImages" alt="">
+                <p class="upcomingEventDesc"></p>
+
+          </div>
 
 
+          <div class="upcomingEventsCol">
+            <h2>Event 3</h2>
+                <img src="../Images/recycling.jpeg" class="upcomingEventsImages" alt="">
+                <p class="upcomingEventDesc"> test test </p>
+          </div>
+
+      </div>
+      <a href="events.html" id="scrollLink" onclick="activeChange()"><p class="aboutUsButton upcomingEventsColor">See All Events</p>
+</div>
 
 
-  </div>
 
 </section>
 
