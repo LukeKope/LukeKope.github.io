@@ -26,6 +26,10 @@ header {
 
 }
 
+a{
+  text-decoration: none;
+}
+
 .title {
   position: absolute;
   top: 50%;
@@ -87,13 +91,14 @@ p{
 #scrollLink{
   text-decoration: none;
   color: #5dbd6b;
+  padding-bottom: 10px;
 }
 
 .aboutUsButton{
 
   font-size: 25px;
   text-decoration: underline;
-
+  padding-bottom: 25px;
 }
 
 #about{
@@ -170,6 +175,11 @@ p{
   margin-right: auto;
   width: inherit;
   transform: scale(.95, .95);
+  transition: 0.5s;
+}
+
+.upcomingEventsImages:hover{
+  transform: scale(.97,.97);
 }
 
 .upcomingEventsCol{
@@ -193,18 +203,6 @@ li strong{
   text-decoration: underline;
   font-size: 25px;
 }
-
-                              .date{
-                              }
-
-                              .time{
-                              }
-
-                              .location{
-                              }
-
-                              .overlay{
-                              }
 
 /* Nav Bar */
 
@@ -249,7 +247,7 @@ li strong{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 10% 20% 10% 20%;
+  padding: 10% 0% 5% 0%;
   margin-bottom: 0;
 }
 
