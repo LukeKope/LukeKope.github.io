@@ -20,24 +20,6 @@ $(document).ready(function() {
 //Time permiting have it so that the logo fades in first (or last, see which looks better). To do this, need to isolate all of the elements you want to fade in and fade them all individually rather than
 //using this fade container.
 
-//alternate row colors on events upcomingEventsImages
-$(function(){
-   var numRows = $(".row").length;
-	 if(numRows%2===0){
-	 $('row').addClass("evenRowBackground");
- }else{
-    $('row').addClass("oddRowBackground");
- }
-});
-
-
-//change css proprty on hover of row in Events Page
-// $(".row").mouseenter(
-// 	function(){
-// 		console.log('hover');
-// 		$(".allEventsFlex").css("opacity", "0.9")
-// 	});
-
 
 });
 

@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding-top: 50px;
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+}
+
+
+
+.main {
+  background: #f9fbfc;
+ -ms-flex: 1;
+ -webkit-box-flex: 1;
+ -moz-box-flex: 1;
+ -ms-box-flex: 1;
+ box-flex: 1;
+}
+
+.eventsNav{
+    height: 50px;
+    background-color: #f9fbfc;
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease .5s;
+    box-shadow: 0px 1px 10px grey;
+}
+
+.eventsLogo{
+  color: #5dbd6b;
+  padding: 0px;
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  padding: 15px 10px 15px 10px;
+  opacity: 1;
+}
+
+.eventsLogo:hover{
+  color: #0c9949;
+}
+
+.facebookIcon{
+  color: #5dbd6b;
+  font-size: 20px;
+  padding: 0px 10px 15px 10px;
+}
+
+.specificEventsBanner{
+  /* object-fit: cover;
+  width: 200px;
+  height: 250px; */
+}
+
+.specificEventsBanner img{
+  padding-top: 5px;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  object-position: 0px -190px;
+}
+
+.specificEventsDescription h1{
+  color: #0c9949;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.specificEventsDescription p{
+  color: #0f4c88;
+  text-align: center;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.sideBar {
+  display: flex;
+  flex-wrap: wrap;
+  background: #5dbd6b;
+  width: 200px;
+  padding-top: 7%;
+
+}
+h1{
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    padding-top: 15px;
+    color: #f9fbfc;
+    padding-left: 15px;
+    padding-right: 15px;
+}
