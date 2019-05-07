@@ -22,6 +22,12 @@ body {
   }
 }
 
+@media (max-width: 1624px){
+  .container{
+    height: auto;
+  }
+}
+
 .main {
   background: #f9fbfc;
   width: 100%;
@@ -68,7 +74,6 @@ body {
   object-fit: cover;
   width: 91.3vw;
   height: 500px;
-  object-position: 0px -190px;
 
 }
 
@@ -88,7 +93,6 @@ body {
 
 .sideBar {
   display: block;
-  flex-wrap: wrap;
   background: #5dbd6b;
   width: 150px;
   padding-top: 7%;
