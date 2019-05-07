@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 //fadeIn animations
 	$('.fadeContainer').animate({'opacity':'1'},1000);
-	$('#aboutUsButton').delay(1300).animate({'marginTop':'+=-10px','opacity':'1'},800);
+	$('.aboutUsButton').delay(1300).animate({'marginTop':'+=-10px','opacity':'1'},800);
 
 
 //Time permiting have it so that the logo fades in first (or last, see which looks better). To do this, need to isolate all of the elements you want to fade in and fade them all individually rather than
