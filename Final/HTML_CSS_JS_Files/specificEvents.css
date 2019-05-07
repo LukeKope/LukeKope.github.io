@@ -8,21 +8,23 @@ body {
 .container {
   padding-top: 50px;
   height: 100%;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: box;
-
-  -ms-flex-direction: row;
+  width: 100%;
+  display: -webkit-inline-box;
   -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -ms-box-orient: horizontal;
-  box-orient: horizontal;
+}
+
+@media (max-width: 1000px){
+  .sideBar{
+    display: block;
+  }
+  .sideBar h1{
+    font-size: 20px;
+  }
 }
 
 .main {
   background: #f9fbfc;
+  width: 100%;
  -ms-flex: 1;
  -webkit-box-flex: 1;
  -moz-box-flex: 1;
@@ -64,7 +66,7 @@ body {
 .specificEventsBanner img{
   padding-top: 0px;
   object-fit: cover;
-  width: 90vw;
+  width: 91.3vw;
   height: 500px;
   object-position: 0px -190px;
 
@@ -73,31 +75,38 @@ body {
 .specificEventsDescription h1{
   color: #0c9949;
   /* text-align: center; */
-  padding-top: 50px;
   padding-left: 120px;
+  font-weight: 700;
 }
 
 .specificEventsDescription p{
   color: #0f4c88;
-  /* text-align: center; */
   padding-top: 10px;
   font-family: 'Ubuntu', sans-serif;
   padding: 5px 120px 5px 120px;
 }
 
 .sideBar {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   background: #5dbd6b;
-  width: 200px;
+  width: 150px;
   padding-top: 7%;
-
-}
+  }
 
 .eventTitle{
   font-size: 50px;
 }
 
+.date{
+  padding-top: 50px;
+}
+.time{
+  padding-top: 50px;
+}
+.location{
+  padding-top: 50px;
+}
 
 h1{
     margin: 0;
